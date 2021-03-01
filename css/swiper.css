@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'iconfont';
+    src: url('../font/iconfont.eot');
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+        url('../font/iconfont.woff2') format('woff2'),
+        url('../font/iconfont.woff') format('woff'),
+        url('../font/iconfont.ttf') format('truetype'),
+        url('../font/iconfont.svg#iconfont') format('svg');
+  }
+
+.cj-swiper-btn {
+    font-family: iconfont !important;
+    font-size: 14px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 25px;
+    height: 35px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, .15);
+    line-height: 35px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    transition: all .3s;
+}
+.cj-swiper-btn:hover{
+    background-color: rgba(0, 0, 0, .4);
+}
+.cj-swiper-rbtn {
+    right: -3px;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+}
+.cj-swiper-lbtn {
+    left: -3px;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+
+.cj-swiper-wrapper > ul,
+.cj-swiper-wrapper > ul > li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.cj-swiper-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+.cj-swiper-animation .cj-swiper-content {
+    position: absolute;
+    left: 0;
+}
+.cj-swiper-animation .cj-swiper-content::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.cj-swiper-animation .cj-swiper-item {
+    float: left;
+}
+
+.cj-swiper-fade .cj-swiper-content {
+    position: relative;
+}
+.cj-swiper-fade .cj-swiper-item {
+    position: absolute;
+}
+
+.cj-swiper-spots {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    line-height: 20px;
+    padding: 10px 20px;
+}
+.cj-swiper-spots span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.cj-swiper-spots span.cj-swiper-current {
+    background-color: #f40;
+}
